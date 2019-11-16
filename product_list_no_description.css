@@ -1,0 +1,352 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+    background-color: #f8f8f8;
+}
+
+.two-division {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-content: center;
+    padding-bottom: 40px;
+    column-gap: 16px;
+}
+
+.three-divison {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    justify-content: center;
+    padding-bottom: 40px;
+    column-gap: 20px;
+}
+
+.four-division {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    justify-content: center;
+    padding-bottom: 40px;
+    column-gap: 20px;
+}
+
+.main-page-layout {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    justify-content: center;
+    padding-bottom: 40px;
+    column-gap: 20px;
+}
+
+.header-menu {
+    height: 64px;
+    box-shadow: 0 8px 8px 0 rgba(28, 81, 142, 0.2);
+    background-image: linear-gradient(87deg, #342e54, #054a91);
+    z-index: 1;
+    position: relative;
+}
+
+.header-logo {
+    grid-column: 2/3;
+    padding-top: 14px;
+}
+
+.header-menu ul {
+    list-style: none;
+    display: flex;
+    padding: 27px;
+    justify-content: flex-end;
+}
+
+.menu-items {
+    padding-left: 32px;
+    height: 20px;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #ffffff;
+    order: 2;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.bg-banner {
+    height: 320px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.02);
+    background-color: white;
+    z-index: 0;
+    position: relative;
+    background-image: url('images/bg-banner.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+}
+
+.breadcrumbs-div {
+    grid-column: 2/4;
+    margin-top: 28px;
+}
+
+/* Style the list */
+ul.breadcrumb {
+    width: 276px;
+    padding: 10px 8px;
+    list-style: none;
+    display: flex;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #57a3f9;
+    width: 10rem;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 0px 8px;
+    color: #0275d8;
+    content: ">";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: none;
+}
+
+.breadcrumb-divider {
+    margin-top: 19px;
+    height: 1px;
+    opacity: 0.3;
+    background-color: #d8d8d8;
+}
+
+.other-information {
+    grid-column: 2/3;
+    margin-top: 27px;
+}
+
+.other-information h1 {
+    height: 44px;
+    font-family: Rubik;
+    font-size: 40px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    color: #292c32;
+}
+
+.reviews-info {
+    position: relative;
+    top: 41px;
+}
+
+.other-information h4 {
+    height: 17px;
+    opacity: 0.4;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #292c32;
+}
+
+.other-information h3 {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #292c32;
+    margin-top: 5px;
+}
+
+.updated-on-data {
+    margin-left: 190px;
+}
+
+.category_image {
+    display: flex;
+    grid-column: 3/4;
+    justify-content: center;
+}
+
+.catg_image {
+    max-height: 220px;
+}
+
+.page-layout {
+    margin-top: 40px;
+}
+
+.main-page {
+    grid-column: 2/5;
+    height: 960px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.02);
+    background-color: #ffffff;
+}
+
+.category-summary {
+    /* width: 688px; */
+    padding: 63px 128px;
+}
+
+.category-summary h3 {
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #5e5e5e;
+}
+
+.rank-card {
+    float: left;
+    margin-top: 69px;
+}
+
+.product_image {
+    height: 96px;
+    float: left;
+    margin: 35px 44px 35px 80px;
+}
+
+.name {
+    margin-top: 56px;
+    float: left;
+}
+
+.guage  {
+    float: left;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .two-division {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .main-page-layout {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .header-menu, .navbar-list {
+        flex-direction: column;
+    }
+
+    .header-logo {
+        grid-column: 2/3;
+    }
+
+    .header-menu ul {
+        grid-column: 2/3;
+        justify-content: flex-end;
+        margin-top: -40px;
+        margin-right: -20px;
+        color: white;
+    }
+
+    .menu-items {
+        display: none;
+        background-image: linear-gradient(87deg, #342e54, #054a91);
+    }
+
+    .navbar-toggle {
+        align-self: flex-end;
+        display: initial;
+        margin-top: -15px;
+        cursor: pointer;
+    }
+
+    .bg-banner {
+        margin-top: -40px;
+    }
+
+    .Navbar__ToggleShow {
+        display: flex;
+    }
+
+    .breadcrumbs-div {
+        grid-column: 2/3;
+        margin-top: 50px;
+    }
+
+    .breadcrumb-divider {
+        margin-top: 5px;
+    }
+
+    .other-information {
+        margin-top: 0;
+    }
+
+    .other-information h1 {
+        margin-bottom: 15px;
+    }
+
+    .reviews-info {
+        top: 50px;
+    }
+
+    .updated-on-data {
+        margin-top: 10px;
+    }
+
+    .category_image {
+        display: none;
+    }
+
+    .main-page {
+        grid-column: 2/3;
+    }
+
+    .category-summary {
+        padding: 20px;
+    }
+
+    .category-summary h3 {
+        font-size: 14px;
+    }
+}
